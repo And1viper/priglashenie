@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class = "landing">
+        <div class = "name-block">
+            <h2 class = "date">13.09.2025</h2>
+            <h1 class = "names-header">Радмир және Роза</h1>
+        </div>
+        <div class = "language-block">
+            <a href = "index.html" class="language-link active">Қазақша</a>
+            <p class = "divisor"> | </p>
+            <a href = "ru.html" class="language-link">Русский</a>
+        </div>
+    </section>
+
+    <section class = "invitation">
+        <div class = "inv-container">
+            <h1 class = "invitation-header">Құрметті қонақтар!</h1>
+            <p class = "invitation-text">Сіздерді баламыз <span class="name">Радмир</span> мен келініміз <span class="name">Розаның</span> қуанышына ортақтасып, үйлену тойына арналған салтанатты кешіміздің қадірлі қонағы болуға шақырамыз!</p>
+        </div>
+
+        <div class = "inv-container">
+            <h1 class = "invitation-header">Үйлену тойының күні</h1>
+            <p class = "invitation-text">2025 жылғы 13 қыркүйекте <br> сағат 15:00-де</p>
+            <div class="calendar">
+                <h1 class="month">Қыркүйек</h1>
+                <div class="weekdays">
+                    <div>Дс</div><div>Сс</div><div>Ср</div><div>Бс</div><div>Жм</div><div>Сн</div><div>Жк</div>
+                </div>
+                <div class="days">
+                    <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div>
+                    <div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div><span class="circled">13</span></div><div>14</div>
+                    <div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div>
+                    <div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div>
+                    <div>29</div><div>30</div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "inv-container">
+            <h1 class = "invitation-header">Мекен-жайымыз</h1>
+            <p class = "invitation-text">Көкшетау қаласы <br> Көктем шағын аудан, 1/1 <br>"Khan Saray" мейрамханасы</p>
+            <a href="https://go.2gis.com/XhHVy" class="map-link">Картада</a>
+        </div>
+    </section>
+
+    <section class = "timing">
+        <h1 class="invitation-header">Той салтанатына дейін</h1>
+        <div class = "timer-container">
+            <div class="timer">
+                <span class="timer-element" id="days-left"></span>
+                <span class="timer-element" id="hours-left"></span>
+                <span class="timer-element" id="minutes-left"></span>
+                <span class="timer-element" id="seconds-left"></span>
+            </div>
+            <div class="timer-info">
+                <span class="info-element" id="days-info">күн</span>
+                <span class="info-element" id="hours-info">сағат</span>
+                <span class="info-element" id="minutes-info">минут</span>
+                <span class="info-element" id="seconds-info">секунд</span>
+            </div>
+        </div>
+    </section>
+
+    <section class = "form-container">
+        <h1 class="invitation-header">Қонақ ретінде қатысатыныңызды растауыңызды сұраймыз</h1>
+        <form action="email.php">
+            <input placeholder="Аты-жөніңіз" type="text" maxlength="30" name="fname">
+            <input type="submit" value="Жіберу">
+        </form>
+    </section>
+</body>
+
+<script>
+var countDownDate = new Date("Sep 13, 2025 15:00:00").getTime();
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    
+    var distance = countDownDate - now;
+        
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    document.getElementById("days-left").innerHTML = days;
+    document.getElementById("hours-left").innerHTML = hours;
+    document.getElementById("minutes-left").innerHTML = minutes;
+    document.getElementById("seconds-left").innerHTML = seconds;
+
+}, 1000);
+</script>
+</html>

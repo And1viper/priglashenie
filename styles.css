@@ -1,0 +1,228 @@
+@font-face {
+  font-family: GoodVibes;
+  src: url(fonts/KZGoodVibes.woff);
+}
+
+h1 {
+    color: rgb(144, 104, 111);
+    font-family: GoodVibes;
+}
+
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.name-block{
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    max-width: 500px;
+    margin: auto;
+    padding: 1em 2em;
+}
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #FFF5E4;
+    padding: 2em 3em;
+
+    background-image: url('images/background-flowers3_1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+
+    min-height: 500px;
+}
+
+.names-header{
+    font-size: 4em;
+    font-weight: 400;
+}
+
+.date{
+    color: rgb(144, 104, 111);
+    font-family: GoodVibes;
+    font-size: 2em;
+}
+
+.invitation-header{
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+.language-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.divisor{
+    margin: 0;
+}
+
+.divisor, .language-link{
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1.2em;
+
+    font-weight: 500;
+}
+
+.language-link.active{
+    text-decoration: underline;
+}
+
+.invitation{
+    background-color: #FFF5E4;
+    padding: 2em 3em;
+
+    text-align: center;
+}
+
+.invitation-text{
+    color: rgb(71, 70, 70);
+    font-size: 1.2em;
+}
+
+.name{
+    color: rgb(144, 104, 111);
+    font-family: GoodVibes;
+    font-size: 1.25em;
+
+    font-weight: 600;
+}
+
+.inv-container{
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2em 2em;
+}
+
+.map-link{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color:rgb(144, 104, 111);
+    padding: 0.5em 2em;
+    border-radius: 20px;
+
+    display: block;
+
+    max-width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.map-link:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    opacity: 0.9;
+
+    transition: all 0.2s
+}
+
+.month{
+    color: rgb(144, 104, 111);
+    font-family: GoodVibes;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+}
+
+/* Calendar */
+
+.calendar {
+    max-width: 320px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.weekdays div {
+    color: white;
+    background: rgb(144, 104, 111);
+
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.days div {
+    padding: 15px 0;
+    font-weight: 500;
+}
+
+.circled{
+    border: solid;
+    border-color: rgb(144, 104, 111);
+    border-radius: 50%;
+    position: relative;
+    padding: 0.5em;
+}
+
+/* Countdown */
+
+.timing{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #FFF5E4;
+    padding: 2em 3em;
+
+    background-image: url('images/time-flowers.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    min-height: 200px;
+}
+
+.timer-container{
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    max-width: 500px;
+    margin: auto;
+    padding: 1em 3em;
+}
+
+.timer, .timer-info{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.timer-element{
+    color: rgb(144, 104, 111);
+    font-size: 2em;
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+.info-element{
+    color: rgb(71, 70, 70);
+    font-size: 0.75em;
+    padding: 0 5px;
+}
+
+.form-container{
+    background-color: #FFF5E4;
+    padding: 2em 3em;
+
+    text-align: center;
+}
